@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registration-form">
+        <label>
+            Nickname:
+            <input type="text" name="nick" pattern="[A-Za-z0-9]+" required>
+            <small>Nickname can include only latin alphabet and numbers.</small>
+        </label>
+        <label>
+            EMail:
+            <input type="email" name="email" placeholder="example@email.com" required>
+        </label>
+        <label>
+            Password:
+            <input id="password" type="text" name="password" required>
+        </label>
+        <label>
+            Repeat password:
+            <input id="password-repeat" type="text" name="repeatPassword" required>
+        </label>
+        <label>
+            Checkbox, if you want to recive news about company.
+            <input type="checkbox" name="check">
+        </label>
+        <button type="submit">Let's Go!</button>
+        <button id="login">Log in</button>
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html>
